@@ -1,0 +1,12 @@
+.side_menu{
+    font-family: "Kode Mono", monospace !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    svg{
+        font-size: 1rem;
+        fill: moccasin;
+    }
+}

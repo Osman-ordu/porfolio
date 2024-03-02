@@ -1,0 +1,26 @@
+@import "../../styles/center";
+.main_container {
+    min-height: 100vh;
+    .header {
+        background: #001628;
+        padding: 40px;
+    }
+    .logo_wrapper {
+        @include alignItemsCenter();
+        gap: 10px;
+        padding: 5px 10px;
+        color: #fff;
+        font-weight: 600x;
+        font-size: 1.1rem;
+        white-space: nowrape;
+        font-family: "Kode Mono", monospace !important;
+
+        img {
+            scale: 2;
+        }
+    }
+
+    .main_content {
+        background: #e5e5e5;
+    }
+}

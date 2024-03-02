@@ -4,8 +4,9 @@ import { Menu } from "antd";
 import { SiAboutdotme,  SiMedium  } from "react-icons/si";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { GoBook } from "react-icons/go";
-import { GrCertificate } from "react-icons/gr";
+import { LiaCertificateSolid } from "react-icons/lia";
 import { FaRegFolder } from "react-icons/fa";
+import style from './styles.module.scss'
 
 const MenuGroup = () => {
 
@@ -25,8 +26,8 @@ const MenuGroup = () => {
     },
     {
       key: "certificates",
-      icon: <GrCertificate />,
-      title: "Licence And Certificates",
+      icon: <LiaCertificateSolid />,
+      title: "Certificates",
       link: "/certificates",
     },
     { key: "blog", icon: <SiMedium />, title: "Blog", link: "/blog" },
@@ -44,9 +45,9 @@ const MenuGroup = () => {
 
   return (
 
-      <Menu theme="dark" defaultSelectedKeys={["about"]} mode="inline">
+      <Menu className={style['side_menu']} theme="dark" defaultSelectedKeys={["about"]} mode="inline">
         {menuData.map((item) => (
-          <Menu.Item key={item.key} icon={item.icon} onClick={handleMenuClick}>
+          <Menu.Item className={style['menu_item']} key={item.key} icon={item.icon} onClick={handleMenuClick}>
             <Link to={item.link}>{item.title}</Link>
           </Menu.Item>
         ))}
