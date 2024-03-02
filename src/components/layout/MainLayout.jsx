@@ -4,6 +4,7 @@ import { Layout, theme } from "antd";
 import Menu from "../menu";
 import logo from '../../assets/osmanordu-favicon-white.png'
 import style from './styles.module.scss'
+import PageTitle from "../pageTitle";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -12,7 +13,7 @@ const MainLayout = () => {
   const { token: { colorBgContainer, borderRadiusLG }, } = theme.useToken();
 
   return (
-    <Layout className={style['main_container']}>
+    <Layout className={style['main']}>
       <Sider 
       trigger={null} 
       collapsible collapsed={collapsed} 
@@ -23,22 +24,18 @@ const MainLayout = () => {
         </div> 
         <Menu />
       </Sider>
-      <Layout className={style['main_content']}>
+      <Layout className={style['main__container']}>
 
         <Header className={style['header']} />
-        <Content style={{ margin: "0 16px" }}>
-          <div style={{margin:'16px '}}></div>
+        <Content className={style['main__content__area']}>
+         <PageTitle title={'About'}/>
 
-          <div style={{
-              padding: 24,
-              minHeight: 360,
-              background: colorBgContainer,
-              borderRadius: borderRadiusLG, }} >
+          <div className={style['main__content']}>
             <Outlet />
           </div>
         </Content>
 
-        <Footer style={{ textAlign: "center", }}> ©{new Date().getFullYear()} Osman ORDU</Footer>
+        <Footer className={style['footer']}> ©{new Date().getFullYear()} Osman ORDU</Footer>
       </Layout>
     </Layout>
   );
