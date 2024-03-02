@@ -1,7 +1,7 @@
-import i18n from 'react-i18next'
-import { initReactI18next } from 'react-i18next'
-import en from './en.ts'
-import en from './tr.ts'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import en from './en'
+import tr from './tr'
 
 const resources = {
     en: { translation: en },

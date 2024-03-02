@@ -1,9 +1,51 @@
-import React from 'react'
+// Experience.js
+
+import React from "react";
+import ContentBox from "../../components/contentBox"; // ContentBox bileşenini doğru yoldan içe aktarın
+import { useTranslation } from "react-i18next";
+const experiences = [
+  {
+    id: "primetech",
+    titleKey: "experience_1_title",
+    paragraphs: [
+      "experience_1_description_1",
+      "experience_1_description_2",
+      "experience_1_description_3"
+    ]
+  },
+  {
+    id: "segmentify",
+    titleKey: "experience_2_title",
+    paragraphs: [
+      "experience_2_description_1",
+      "experience_2_description_2",
+      "experience_2_description_3"
+    ]
+  },
+  {
+    id: "bilge-adam",
+    titleKey: "experience_3_title",
+    paragraphs: [
+      "experience_3_description"
+    ]
+  }
+];
 
 const Experience = () => {
-  return (
-    <div>Experience</div>
-  )
-}
+  const { t } = useTranslation();
 
-export default Experience
+  return (
+    <section>
+      {experiences.map((experience, index) => (
+        <ContentBox
+          key={index}
+          id={experience.id}
+          title={t(experience.titleKey)}
+          paragraphs={experience.paragraphs.map(paragraph => t(paragraph))}
+        />
+      ))}
+    </section>
+  );
+};
+
+export default Experience;

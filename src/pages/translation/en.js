@@ -42,4 +42,4 @@ const infosEn = {
     send_button:'SEND!',
 }
 
-export default enTranslation;
+export default  infosEn;

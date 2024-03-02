@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const { t } = useTranslation(); // Destructure t function for translations
 
-export default About
+  return (
+    <section>
+      <h2>{t('title')}</h2>
+      <h5>{t('name')}</h5>
+      <p>{t('description_p1')}</p>
+      <p>{t('description_p2')}</p>
+    </section>
+  );
+};
+
+export default About;
