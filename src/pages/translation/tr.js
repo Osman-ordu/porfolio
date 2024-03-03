@@ -7,6 +7,7 @@ const infosTr = {
     certificates:'Sertifikalar',
     blog:'Blog',
     projects:'Projeler',
+    stack:'Yığın',
 
     // About
     title:'Front-end Developer',

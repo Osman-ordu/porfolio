@@ -10,6 +10,7 @@ import { LiaCertificateSolid } from 'react-icons/lia';
 import { FaRegFolder } from 'react-icons/fa';
 import style from './styles.module.scss';
 import { useTranslation } from 'react-i18next';
+import { RiStackshareLine } from 'react-icons/ri';
 
 const menuData = [
   { key: 'about', icon: <SiAboutdotme />, title: 'about', link: '/about' },
@@ -37,6 +38,12 @@ const menuData = [
     icon: <FaRegFolder />,
     title: 'projects',
     link: '/projects',
+  },
+  {
+    key: 'stack',
+    icon: <RiStackshareLine />,
+    title: 'stack',
+    link: '/stack',
   },
 ];
 

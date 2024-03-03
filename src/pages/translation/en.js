@@ -7,6 +7,7 @@ const infosEn = {
     certificates:'Certificates',
     blog:'Blog',
     projects:'Projects',
+    stack:'Stack',
 
     // About
     title:'Front-end Developer',

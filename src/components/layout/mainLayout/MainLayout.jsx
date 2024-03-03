@@ -1,12 +1,13 @@
 // MainLayout.jsx
 
-import React, { useState } from "react";
-import { Outlet } from "react-router-dom";
-import { Layout } from "antd";
-import Menu from "../../menu";
-import logo from '../../../assets/osmanordu-favicon-white.png'
-import style from './styles.module.scss'
-import PageTitle from '../../pageTitle'
+import React, { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import { Layout } from 'antd';
+import Menu from '../../menu';
+import PageTitle from '../../pageTitle';
+import LanguageSelect from '../../languageSwitch';
+import logo from '../../../assets/osmanordu-favicon-white.png';
+import style from './styles.module.scss';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -19,7 +20,6 @@ const MainLayout = () => {
   };
 
   return (
-    
     <Layout className={style['main']}>
       <Sider
         className={style['sidebar']}
@@ -35,21 +35,22 @@ const MainLayout = () => {
         <Menu onMenuClick={handleMenuClick} />
       </Sider>
       <Layout className={style['main__container']}>
-        <Header className={style['header']} />
+        <Header className={style['header']}>
+          <LanguageSelect />
+        </Header>
         <Content className={style['main__content__area']}>
           <PageTitle title={pageTitle} />
 
           <div className={style['main__content']}>
             <Outlet />
           </div>
-  
         </Content>
 
-        <Footer className={style['footer']}>Copyright © {new Date().getFullYear()} Osman ORDU</Footer>
+        <Footer className={style['footer']}>
+          Copyright © {new Date().getFullYear()} Osman ORDU
+        </Footer>
       </Layout>
     </Layout>
-
-
   );
 };
 

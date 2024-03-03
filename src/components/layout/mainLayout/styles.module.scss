@@ -38,6 +38,9 @@
         line-height: 2.1;
         font-weight: 500;
     }
+    .header {
+        @include alignItemsCenterEnd();
+    }
     .footer {
         background-color: #001628;
         color: #e5e5e5;
