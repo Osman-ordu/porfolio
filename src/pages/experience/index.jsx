@@ -26,7 +26,11 @@ const experiences = [
     titleKey: 'experience_3_title',
     subTitleKey: 'title',
     history: 'experience_3_title_sub',
-    paragraphs: ['experience_3_description'],
+    paragraphs: [
+      'experience_3_description_1',
+      'experience_3_description_2',
+      'experience_3_description_3',
+    ],
   },
   {
     id: 'inditex',

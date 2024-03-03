@@ -30,8 +30,10 @@ const infosEn = {
 
     experience_3_title:'BilgeAdam Technologies',
     experience_3_title_sub:' - 04/2022 - 10/2024 · (6 months)',
-    experience_3_description:'By refactoring the code with the engineering team, the complexity of the codes in the repositories was minimized. By doing good SEO work, it made it stand out by 40% in search engines.',
-    
+    experience_3_description_1:'By refactoring the code with the engineering team, the complexity of the codes in the repositories was minimized. By doing good SEO work, it made it stand out by 40% in search engines.',
+    experience_3_description_2:'Developed responsive web-based applications. Completed the actions taken according to coding standards.',
+    experience_3_description_3:'Created reusable modular components. Speeded up the operation by minimizing the targeted time.',
+
     experience_4_title: "Inditex / Pullandbear",
     experience_4_title_sub: " - 11/2017 - 07/2021 · (3 years 9 months)",
     experience_4_description_1: "Provided training to the store team on visual marketing strategies and practices and actively participated in workshops.",
