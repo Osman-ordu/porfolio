@@ -15,6 +15,12 @@
   justify-content: space-between;
 }
 
+@mixin alignItemsCenterSE() {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 @mixin alignItemsCenterSBG() {
   display: flex;
   align-items: center;

@@ -12,7 +12,7 @@ const ImageTextBox = ({ image, title, subTitle, text }) => {
       </div>
       <div className={styles['container__widget__second']}>
         <h2>{title}</h2>
-        <h5>{subTitle}</h5>
+        <h3>{subTitle}</h3>
         {text.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

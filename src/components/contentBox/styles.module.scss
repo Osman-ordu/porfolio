@@ -1,4 +1,5 @@
 @import "../../styles/box-shadow.scss";
+@import "../../styles/center.scss";
 
 .content_box {
     padding: 10px;
@@ -6,4 +7,21 @@
     border-radius: 10px;
     @include boxShadowAll();
     background-color: #fff;
+
+    &__sub {
+        @include alignItemsCenter();
+        span {
+            font-size: 12px;
+            font-weight: 600;
+            color: #333;
+        }
+    }
+    h2,
+    h3 {
+        line-height: 1;
+    }
+    h3 {
+        color: red;
+        font-weight: 600;
+    }
 }

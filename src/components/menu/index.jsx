@@ -1,44 +1,47 @@
 // MenuGroup.jsx
 
-import React from "react";
-import { Link } from "react-router-dom";
-import { Menu } from "antd";
-import { SiAboutdotme, SiMedium } from "react-icons/si";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { GoBook } from "react-icons/go";
-import { LiaCertificateSolid } from "react-icons/lia";
-import { FaRegFolder } from "react-icons/fa";
-import style from './styles.module.scss'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Menu } from 'antd';
+import { SiAboutdotme, SiMedium } from 'react-icons/si';
+import { MdOutlineWorkOutline } from 'react-icons/md';
+import { GoBook } from 'react-icons/go';
+import { LiaCertificateSolid } from 'react-icons/lia';
+import { FaRegFolder } from 'react-icons/fa';
+import style from './styles.module.scss';
+import { useTranslation } from 'react-i18next';
+
+const menuData = [
+  { key: 'about', icon: <SiAboutdotme />, title: 'about', link: '/about' },
+  {
+    key: 'experience',
+    icon: <MdOutlineWorkOutline />,
+    title: 'experience',
+    link: '/experience',
+  },
+  {
+    key: 'education',
+    icon: <GoBook />,
+    title: 'education',
+    link: '/education',
+  },
+  {
+    key: 'certificates',
+    icon: <LiaCertificateSolid />,
+    title: 'certificates',
+    link: '/certificates',
+  },
+  { key: 'blog', icon: <SiMedium />, title: 'Blog', link: '/blog' },
+  {
+    key: 'projects',
+    icon: <FaRegFolder />,
+    title: 'projects',
+    link: '/projects',
+  },
+];
 
 const MenuGroup = ({ onMenuClick }) => {
-  const menuData = [
-    { key: "about", icon: <SiAboutdotme />, title: "About", link: "/about" },
-    {
-      key: "experience",
-      icon: <MdOutlineWorkOutline />,
-      title: "Experience",
-      link: "/experience",
-    },
-    {
-      key: "education",
-      icon: <GoBook />,
-      title: "Education",
-      link: "/education",
-    },
-    {
-      key: "certificates",
-      icon: <LiaCertificateSolid />,
-      title: "Certificates",
-      link: "/certificates",
-    },
-    { key: "blog", icon: <SiMedium />, title: "Blog", link: "/blog" },
-    {
-      key: "projects",
-      icon: <FaRegFolder />,
-      title: "Projects",
-      link: "/projects",
-    },
-  ];
+  const { t } = useTranslation();
 
   const handleMenuClick = ({ key }) => {
     onMenuClick(key);
@@ -47,18 +50,18 @@ const MenuGroup = ({ onMenuClick }) => {
   return (
     <Menu
       className={style['side_menu']}
-      theme="dark"
-      defaultSelectedKeys={["about"]}
-      mode="inline"
+      theme='dark'
+      defaultSelectedKeys={['about']}
+      mode='inline'
     >
       {menuData.map((item) => (
         <Menu.Item
           className={style['menu_item']}
-          key={item.key}
+          key={t(item.key)}
           icon={item.icon}
           onClick={() => handleMenuClick(item)}
         >
-          <Link to={item.link}>{item.title}</Link>
+          <Link to={item.link}>{t(item.title)}</Link>
         </Menu.Item>
       ))}
     </Menu>

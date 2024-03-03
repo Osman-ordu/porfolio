@@ -6,11 +6,15 @@ const experiences = [
   {
     id: 'primetech',
     titleKey: 'experience_1_title',
+    subTitleKey: 'experienceTitle',
+    history: 'experience_1_title_sub',
     paragraphs: ['experience_1_description_1', 'experience_1_description_2'],
   },
   {
     id: 'segmentify',
     titleKey: 'experience_2_title',
+    subTitleKey: 'experienceTitle',
+    history: 'experience_2_title_sub',
     paragraphs: [
       'experience_2_description_1',
       'experience_2_description_2',
@@ -20,6 +24,8 @@ const experiences = [
   {
     id: 'bilge-adam',
     titleKey: 'experience_3_title',
+    subTitleKey: 'experienceTitle',
+    history: 'experience_3_title_sub',
     paragraphs: ['experience_3_description'],
   },
 ];
@@ -33,7 +39,9 @@ const Experience = () => {
         <ContentBox
           key={index}
           id={experience.id}
+          history={t(experience.history)}
           title={t(experience.titleKey)}
+          subTitle={t(experience.subTitleKey)}
           paragraphs={experience.paragraphs.map((paragraph) => t(paragraph))}
         />
       ))}

@@ -1,0 +1,15 @@
+@import "../../styles/center.scss";
+
+.container {
+    @include alignItemsCenterSE();
+    max-width: 100%;
+    height: 60vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
