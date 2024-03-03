@@ -10,7 +10,7 @@ const infosTr = {
     experience_1_title:'PrimeTech',
     experience_1_description_1:'Kullanıcı ve kontrol paneli bölümlerini içeren, çekirdek yönetici paneli görevi gören bir React uygulamasının geliştirilmesine katkıda bulunuldu. Kullanıcı yönetimi modülü içerisinde CRUD işlemlerinin uygulanmasına odaklanılmıştır.',
     experience_1_description_2:'PrimeTech, e-posta işlevselliği, çoklu dil desteği ve SEO optimizasyonu gibi temel özellikleri entegre ederek resmi web sitesini sıfırdan geliştirdi.',
-    experience_1_description_3:'',
+    
 
     experience_2_title:'Segmentify',
     experience_2_description_1:'Türkiye´nin önde gelen e-ticaret markalarına kişiye özel e-ticaret hizmeti verildi. Atasay, Koton, Derimod, Bauhaus, Avansas, Panço, Exorgin, Atom Bilişim, Ayakkabı Dünyası, Saat&Saat, Armağan Oyuncak ve Bayar Gold gibi.',

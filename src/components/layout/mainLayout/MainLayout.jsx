@@ -1,3 +1,5 @@
+// MainLayout.jsx
+
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Layout } from "antd";
@@ -10,33 +12,41 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const [pageTitle, setPageTitle] = useState('About'); // Başlangıç başlığı
+
+  const handleMenuClick = (title) => {
+    setPageTitle(title);
+  };
 
   return (
     <Layout className={style['main']}>
-      <Sider 
-      className={style['sidebar']}
-      trigger={null} 
-      collapsible collapsed={collapsed} 
-      onCollapse={(value) => setCollapsed(value)} >
+      <Sider
+        className={style['sidebar']}
+        trigger={null}
+        collapsible
+        collapsed={collapsed}
+        onCollapse={(value) => setCollapsed(value)}
+      >
         <div className={style['logo_wrapper']}>
-          <img src={logo}  alt={'logo'} width={64}/>
+          <img src={logo} alt={'logo'} width={64} />
           <span>Osman Ordu</span>
-        </div> 
-        <Menu />
+        </div>
+        <Menu onMenuClick={handleMenuClick} />
       </Sider>
       <Layout className={style['main__container']}>
-        <Header  className={style['header']} />
+        <Header className={style['header']} />
         <Content className={style['main__content__area']}>
-         <PageTitle title={'About'}/>
+          <PageTitle title={pageTitle} />
 
           <div className={style['main__content']}>
             <Outlet />
           </div>
         </Content>
 
-        <Footer className={style['footer']}> ©{new Date().getFullYear()} Osman ORDU</Footer>
+        <Footer className={style['footer']}>Copyright © {new Date().getFullYear()} Osman ORDU</Footer>
       </Layout>
     </Layout>
   );
 };
+
 export default MainLayout;

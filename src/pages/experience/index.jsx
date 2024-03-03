@@ -10,7 +10,7 @@ const experiences = [
     paragraphs: [
       "experience_1_description_1",
       "experience_1_description_2",
-      "experience_1_description_3"
+     
     ]
   },
   {

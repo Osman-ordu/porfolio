@@ -1,15 +1,16 @@
+// MenuGroup.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "antd";
-import { SiAboutdotme,  SiMedium  } from "react-icons/si";
+import { SiAboutdotme, SiMedium } from "react-icons/si";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { GoBook } from "react-icons/go";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { FaRegFolder } from "react-icons/fa";
 import style from './styles.module.scss'
 
-const MenuGroup = () => {
-
+const MenuGroup = ({ onMenuClick }) => {
   const menuData = [
     { key: "about", icon: <SiAboutdotme />, title: "About", link: "/about" },
     {
@@ -39,20 +40,28 @@ const MenuGroup = () => {
     },
   ];
 
-  const handleMenuClick = ( {key }) => {
-    localStorage.setItem('page',key)
-  }
+  const handleMenuClick = ({ key }) => {
+    onMenuClick(key);
+  };
 
   return (
-
-      <Menu className={style['side_menu']} theme="dark" defaultSelectedKeys={["about"]} mode="inline">
-        {menuData.map((item) => (
-          <Menu.Item className={style['menu_item']} key={item.key} icon={item.icon} onClick={handleMenuClick}>
-            <Link to={item.link}>{item.title}</Link>
-          </Menu.Item>
-        ))}
-      </Menu>
-
+    <Menu
+      className={style['side_menu']}
+      theme="dark"
+      defaultSelectedKeys={["about"]}
+      mode="inline"
+    >
+      {menuData.map((item) => (
+        <Menu.Item
+          className={style['menu_item']}
+          key={item.key}
+          icon={item.icon}
+          onClick={() => handleMenuClick(item)}
+        >
+          <Link to={item.link}>{item.title}</Link>
+        </Menu.Item>
+      ))}
+    </Menu>
   );
 };
 
