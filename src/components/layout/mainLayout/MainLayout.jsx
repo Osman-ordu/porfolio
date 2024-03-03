@@ -12,13 +12,14 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [pageTitle, setPageTitle] = useState('About'); // Başlangıç başlığı
+  const [pageTitle, setPageTitle] = useState(''); // Başlangıç başlığı
 
   const handleMenuClick = (title) => {
     setPageTitle(title);
   };
 
   return (
+    
     <Layout className={style['main']}>
       <Sider
         className={style['sidebar']}
@@ -41,11 +42,14 @@ const MainLayout = () => {
           <div className={style['main__content']}>
             <Outlet />
           </div>
+  
         </Content>
 
         <Footer className={style['footer']}>Copyright © {new Date().getFullYear()} Osman ORDU</Footer>
       </Layout>
     </Layout>
+
+
   );
 };
 

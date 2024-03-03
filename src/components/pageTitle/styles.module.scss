@@ -7,4 +7,5 @@
   font-family: "Kode Mono";
   text-transform: capitalize;
   text-decoration: underline;
+  @include textAlignEnd();
 }

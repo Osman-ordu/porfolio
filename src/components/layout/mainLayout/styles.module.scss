@@ -1,4 +1,5 @@
 @import "../../../styles/center.scss";
+
 .main {
     min-height: 100vh;
     .header {
@@ -32,14 +33,15 @@
     &__content {
         padding: 15px;
         min-height: 75vh;
-        background: #fff;
         border-radius: 10px;
         font-family: "Kode Mono", monospace !important;
+        line-height: 2.1;
+        font-weight: 500;
     }
     .footer {
-        text-align: center;
         background-color: #001628;
         color: #e5e5e5;
         font-family: "Kode Mono", monospace !important;
+        @include textAlignEnd();
     }
 }
