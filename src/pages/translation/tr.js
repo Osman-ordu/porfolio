@@ -42,7 +42,8 @@ const infosTr = {
     experience_4_description_3:'Ürünlerin doğru şekilde sergilenmesi ve yenilikçi mağaza düzenlemeleri ile marka imajı gelişimine büyük oranda katkıda bulundu.',
 
 
-    experience_bussines_state:'Tam zamanlı',
+    experience_bussines_state_full:'Tam zamanlı',
+    experience_bussines_state_half:'Yarı zamanlı',
     experienceTitle : 'Frontend Developer',
 
 

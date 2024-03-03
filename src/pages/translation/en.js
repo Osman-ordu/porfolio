@@ -41,7 +41,8 @@ const infosEn = {
     experience_4_description_3: "Contributed significantly to the development of brand image through proper product display and innovative store arrangements.",
     
     
-    experience_bussines_state:'Full time',
+    experience_bussines_state_full:'Full time',
+    experience_bussines_state_half:'Half time',
 
 
     // Education
