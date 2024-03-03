@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Dropdown, Menu } from 'antd';
 import { FaChevronDown } from 'react-icons/fa';
 import i18n from '../../pages/translation';
+import style from './styles.module.scss';
 
 const LanguageSelect = () => {
   const [selectedLanguage, setSelectedLanguage] = useState('tr');
@@ -22,14 +23,21 @@ const LanguageSelect = () => {
 
   const languageSwitch = (
     <Menu onClick={handleSelectLanguage} selectedKeys={[selectedLanguage]}>
-      <Menu.Item key='en'>EN</Menu.Item>
-      <Menu.Item key='tr'>TR</Menu.Item>
+      {selectedLanguage === 'en' ? (
+        <Menu.Item key='tr'>TR</Menu.Item>
+      ) : (
+        <Menu.Item key='en'>EN</Menu.Item>
+      )}
     </Menu>
   );
 
   return (
     <div>
-      <Dropdown overlay={languageSwitch} trigger={['click']}>
+      <Dropdown
+        className={style['dropdown']}
+        overlay={languageSwitch}
+        trigger={['click']}
+      >
         <a onClick={(e) => e.preventDefault()}>
           {selectedLanguage.toUpperCase()} <FaChevronDown />
         </a>

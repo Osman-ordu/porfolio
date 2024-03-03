@@ -6,14 +6,14 @@ const experiences = [
   {
     id: 'primetech',
     titleKey: 'experience_1_title',
-    subTitleKey: 'experienceTitle',
+    subTitleKey: 'title',
     history: 'experience_1_title_sub',
     paragraphs: ['experience_1_description_1', 'experience_1_description_2'],
   },
   {
     id: 'segmentify',
     titleKey: 'experience_2_title',
-    subTitleKey: 'experienceTitle',
+    subTitleKey: 'title',
     history: 'experience_2_title_sub',
     paragraphs: [
       'experience_2_description_1',
@@ -24,9 +24,20 @@ const experiences = [
   {
     id: 'bilge-adam',
     titleKey: 'experience_3_title',
-    subTitleKey: 'experienceTitle',
+    subTitleKey: 'title',
     history: 'experience_3_title_sub',
     paragraphs: ['experience_3_description'],
+  },
+  {
+    id: 'inditex',
+    titleKey: 'experience_4_title',
+    subTitleKey: 'Visual Merchandiser',
+    history: 'experience_4_title_sub',
+    paragraphs: [
+      'experience_4_description_1',
+      'experience_4_description_2',
+      'experience_4_description_3',
+    ],
   },
 ];
 

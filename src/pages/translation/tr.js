@@ -32,6 +32,13 @@ const infosTr = {
     experience_3_title_sub:' - 04/2022 - 10/2024 · (6 ay)',
     experience_3_description:'Kodu mühendislik ekibiyle refactor ederek repo kodlarının karmaşıklığı en aza indirdi. İyi bir SEO çalışması yaparak arama motorlarında %60 öne çıkmayı sağladı.',
 
+    experience_4_title:'Inditex / Pullandbear',
+    experience_4_title_sub:' - 11/2017 - 07/2021 · (3 yıl 9 ay)',
+    experience_4_description_1:'Mağaza ekibine görsel pazarlama stratejileri ve uygulamaları konusunda eğitimler verdi ve workshop`larda aktif rol aldı.',
+    experience_4_description_2:'Mağaza içi düzenlemelerle müşteri deneyimini arttırdı, alışveriş yapmayı kolaylaştırdı ve satış artışını doğrudan etkileyici aksiyonlar aldı.',
+    experience_4_description_3:'Ürünlerin doğru şekilde sergilenmesi ve yenilikçi mağaza düzenlemeleri ile marka imajı gelişimine büyük oranda katkıda bulundu.',
+
+
     experience_bussines_state:'Tam zamanlı',
     experienceTitle : 'Frontend Developer',
 
