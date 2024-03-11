@@ -32,7 +32,7 @@ const infosTr = {
     experience_3_title_sub:' - 04/2022 - 10/2024 · (6 ay)',
     experience_3_description_1:'Kodu mühendislik ekibiyle refactor ederek repo kodlarının karmaşıklığı en aza indirdi. İyi bir SEO çalışması yaparak arama motorlarında %60 öne çıkmayı sağladı.',
     experience_3_description_2:'Responsive Web tabanlı uygulamalar geliştirdi. Repoda kodlama standartlarına göre alınan aksiyonları tamamladı.',
-    experience_3_description_3:'Yeniden kullanılabilir modüler bileşenler oluşturdu. Hedeflenen süreyi en aza indirerek operasyonu hızlandırdı',
+    experience_3_description_3:'Yeniden kullanılabilir modüler bileşenler oluşturdu. Hedeflenen süreyi en aza indirerek operasyonu hızlandırdı.',
 
 
     experience_4_title:'Inditex / Pullandbear',
