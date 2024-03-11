@@ -1,16 +1,14 @@
-// MenuGroup.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
+import { useTranslation } from 'react-i18next';
 import { SiAboutdotme, SiMedium } from 'react-icons/si';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { GoBook } from 'react-icons/go';
 import { LiaCertificateSolid } from 'react-icons/lia';
 import { FaRegFolder } from 'react-icons/fa';
-import style from './styles.module.scss';
-import { useTranslation } from 'react-i18next';
 import { RiStackshareLine } from 'react-icons/ri';
+import style from './styles.module.scss';
 
 const menuData = [
   { key: 'about', icon: <SiAboutdotme />, title: 'about', link: '/about' },
@@ -55,19 +53,9 @@ const MenuGroup = ({ onMenuClick }) => {
   };
 
   return (
-    <Menu
-      className={style['side_menu']}
-      theme='dark'
-      defaultSelectedKeys={['about']}
-      mode='inline'
-    >
+    <Menu className={style['c-sidemenu']} theme='dark' defaultSelectedKeys={['about']} mode='inline'>
       {menuData.map((item) => (
-        <Menu.Item
-          className={style['menu_item']}
-          key={t(item.key)}
-          icon={item.icon}
-          onClick={() => handleMenuClick(item)}
-        >
+        <Menu.Item className={style['c-sidemenu__group']} key={t(item.key)} icon={item.icon} onClick={() => handleMenuClick(item)}>
           <Link to={item.link}>{t(item.title)}</Link>
         </Menu.Item>
       ))}

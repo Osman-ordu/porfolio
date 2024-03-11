@@ -20,35 +20,25 @@ const MainLayout = () => {
   };
 
   return (
-    <Layout className={style['main']}>
-      <Sider
-        className={style['sidebar']}
-        trigger={null}
-        collapsible
-        collapsed={collapsed}
-        onCollapse={(value) => setCollapsed(value)}
-      >
-        <div className={style['logo_wrapper']}>
+    <Layout className={style['c-main']}>
+      <Sider className={style['c-main__side']} trigger={null} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+        <div className={style['c-main__logo-area']}>
           <img src={logo} alt={'logo'} width={64} />
           <span>Osman Ordu</span>
         </div>
         <Menu onMenuClick={handleMenuClick} />
       </Sider>
-      <Layout className={style['main__container']}>
-        <Header className={style['header']}>
+      <Layout className={style['c-main__container']}>
+        <Header className={style['c-main__header']}>
           <LanguageSelect />
         </Header>
-        <Content className={style['main__content__area']}>
+        <Content className={style['c-main__content__area']}>
           <PageTitle title={pageTitle} />
-
-          <div className={style['main__content']}>
+          <div className={style['c-main__content']}>
             <Outlet />
           </div>
         </Content>
-
-        <Footer className={style['footer']}>
-          Copyright © {new Date().getFullYear()} Osman ORDU
-        </Footer>
+        <Footer className={style['c-main__footer']}>Copyright © {new Date().getFullYear()} Osman ORDU</Footer>
       </Layout>
     </Layout>
   );

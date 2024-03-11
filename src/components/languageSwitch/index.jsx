@@ -23,21 +23,13 @@ const LanguageSelect = () => {
 
   const languageSwitch = (
     <Menu onClick={handleSelectLanguage} selectedKeys={[selectedLanguage]}>
-      {selectedLanguage === 'en' ? (
-        <Menu.Item key='tr'>TR</Menu.Item>
-      ) : (
-        <Menu.Item key='en'>EN</Menu.Item>
-      )}
+      {selectedLanguage === 'en' ? <Menu.Item key='tr'>TR</Menu.Item> : <Menu.Item key='en'>EN</Menu.Item>}
     </Menu>
   );
 
   return (
     <div>
-      <Dropdown
-        className={style['dropdown']}
-        overlay={languageSwitch}
-        trigger={['click']}
-      >
+      <Dropdown className={style['c-dropdown']} overlay={languageSwitch} trigger={['click']}>
         <a onClick={(e) => e.preventDefault()}>
           {selectedLanguage.toUpperCase()} <FaChevronDown />
         </a>

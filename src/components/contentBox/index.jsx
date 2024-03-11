@@ -3,10 +3,10 @@ import style from './styles.module.scss';
 
 const ContentBox = ({ id, title, paragraphs, subTitle, history }) => {
   return (
-    <div id={id} className={style['content_box']}>
+    <div id={id} className={style['c-contentbox']}>
       <ul>
         <h2>{subTitle}</h2>
-        <div className={style['content_box__sub']}>
+        <div className={style['c-contentbox__sub']}>
           <h3>{title}</h3>
           <span>{history}</span>
         </div>

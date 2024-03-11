@@ -1,11 +1,10 @@
-.side_menu{
+.c-sidemenu {
     font-family: "Kode Mono", monospace !important;
     display: flex;
     flex-direction: column;
     gap: 10px;
 
-
-    svg{
+    svg {
         font-size: 1rem;
         fill: moccasin;
     }

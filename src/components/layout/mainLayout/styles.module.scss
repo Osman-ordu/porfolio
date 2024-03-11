@@ -1,12 +1,13 @@
 @import "../../../styles/center.scss";
 
-.main {
+.c-main {
     max-height: 100vh;
-    .header {
+    &__header {
+        @include alignItemsCenterEnd();
         background: #001628;
         padding: 40px;
     }
-    .logo_wrapper {
+    &__logo-area {
         @include alignItemsCenter();
         gap: 10px;
         padding: 5px 10px;
@@ -20,7 +21,7 @@
             scale: 2;
         }
     }
-    .sidebar {
+    &__side {
         padding: 10px;
     }
 
@@ -40,8 +41,7 @@
     }
     &__content__area::-webkit-scrollbar-thumb {
         background-color: #4d4a4a;
-        border: 3px solid;
-        border-radius: 20px;
+        border: 5px solid #052e50;
     }
     &__content {
         padding: 15px;
@@ -51,10 +51,7 @@
         line-height: 2.1;
         font-weight: 500;
     }
-    .header {
-        @include alignItemsCenterEnd();
-    }
-    .footer {
+    &__footer {
         background-color: #001628;
         color: #e5e5e5;
         font-family: "Kode Mono", monospace !important;

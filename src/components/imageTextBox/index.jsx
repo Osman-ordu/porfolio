@@ -4,13 +4,13 @@ import LazyLoad from 'react-lazy-load';
 
 const ImageTextBox = ({ image, title, subTitle, text }) => {
   return (
-    <div className={styles['container']}>
-      <div className={styles['container__widget__first']}>
+    <div className={styles['c-container']}>
+      <div className={styles['c-container__first-widget']}>
         <LazyLoad>
           <img src={image} alt={subTitle} />
         </LazyLoad>
       </div>
-      <div className={styles['container__widget__second']}>
+      <div className={styles['c-container__second-widget']}>
         <h2>{title}</h2>
         <h3>{subTitle}</h3>
         {text.map((paragraph, index) => (

@@ -1,10 +1,10 @@
 @import "../../styles/center.scss";
 
-.container {
+.c-container {
     max-width: 100%;
     @include alignItemsCenterSBG();
 
-    &__widget__first {
+    &__first-widget {
         max-width: 50%;
         @include justifyStart();
         img {
@@ -12,7 +12,7 @@
             border-radius: 10px;
         }
     }
-    &__widget__second {
+    &__second-widget {
         max-width: 50%;
 
         h3 {
@@ -25,17 +25,17 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .container {
+    .c-container {
         max-width: 100%;
         @include alignItemsCenterSBG_Mobile();
 
-        &__widget__first {
+        &__first-widget {
             max-width: 100%;
             img {
                 max-width: 100%;
             }
         }
-        &__widget__second {
+        &__second-widget {
             max-width: 100%;
         }
     }
