@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Certificates = () => {
-  return (
-    <section>Certificates</section>
-  )
-}
+  return <section>Certificates</section>;
+};
 
-export default Certificates
+export default Certificates;

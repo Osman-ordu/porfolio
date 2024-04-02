@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Router } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Router } from 'react-router-dom';
 
 export function HistoryRouter({ baseName, children, history }) {
   const [state, setState] = useState({
     action: history.action,
-    location: history.location
+    location: history.location,
   });
 
   useEffect(() => {
@@ -15,11 +15,7 @@ export function HistoryRouter({ baseName, children, history }) {
   }, [history]);
 
   return (
-    <Router
-      basename={baseName}
-      location={state.location}
-      action={state.action}
-    >
+    <Router basename={baseName} location={state.location} action={state.action}>
       {children}
     </Router>
   );
