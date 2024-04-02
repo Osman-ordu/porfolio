@@ -1,6 +1,5 @@
-import React from 'react';
-import styles from './styles.module.scss'; // Import styles
 import LazyLoad from 'react-lazy-load';
+import styles from './styles.module.scss';
 
 const ImageTextBox = ({ image, title, subTitle, text }) => {
   return (

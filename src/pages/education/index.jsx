@@ -1,6 +1,5 @@
-import React from 'react';
-import TextBox from '../../components/textBox';
 import { useTranslation } from 'react-i18next';
+import TextBox from '../../components/textBox';
 import style from './styles.module.scss';
 
 const educations = [
@@ -27,12 +26,7 @@ const Education = () => {
   return (
     <section className={style['container']}>
       {educations.map((education, index) => (
-        <TextBox
-          key={index}
-          title={t(education.titleKey)}
-          subTitle={t(education.sectionKey)}
-          text={t(education.historyKey)}
-        />
+        <TextBox key={index} title={t(education.titleKey)} subTitle={t(education.sectionKey)} text={t(education.historyKey)} />
       ))}
     </section>
   );

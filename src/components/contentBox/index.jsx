@@ -1,4 +1,3 @@
-import React from 'react';
 import style from './styles.module.scss';
 
 const ContentBox = ({ id, title, paragraphs, subTitle, history }) => {

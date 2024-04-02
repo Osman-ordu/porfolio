@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Dropdown, Menu } from 'antd';
 import { FaChevronDown } from 'react-icons/fa';
 import i18n from '../../pages/translation';

@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
+import { Menu } from 'antd';
 import { SiAboutdotme, SiMedium } from 'react-icons/si';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { GoBook } from 'react-icons/go';

@@ -1,10 +1,8 @@
-// MainLayout.jsx
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Layout } from 'antd';
 import Menu from '../../menu';
-import PageTitle from '../../pageTitle';
+import PageTitle from '../../../components/pageTitle';
 import LanguageSelect from '../../languageSwitch';
 import logo from '../../../assets/osmanordu-favicon-white.png';
 import style from './styles.module.scss';
@@ -13,7 +11,7 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [pageTitle, setPageTitle] = useState(''); // Başlangıç başlığı
+  const [pageTitle, setPageTitle] = useState('');
 
   const handleMenuClick = (title) => {
     setPageTitle(title);

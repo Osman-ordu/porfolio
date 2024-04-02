@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Blog = () => {
-  return (
-    <section>Blog</section>
-  )
-}
+  return <section>Blog</section>;
+};
 
-export default Blog
+export default Blog;
