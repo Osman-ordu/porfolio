@@ -1,3 +1,6 @@
+import CSlider from '../../components/slider'
+import styles from './styles.module.scss'
+
 const Stack = () => {
   const techStackData = [
     {
@@ -40,23 +43,22 @@ const Stack = () => {
       title:'Styles',
       techs:['Pure-css','Bootstrap','Sass & Scss','Less','Ant Design','Material UI','Tailwind.css'],
     },
-
-  ]
-
-
+  ];
   return (
-    <section>
-      {techStackData && techStackData.map((stack,index) => (
-      <div key={index}> 
-        <h2>{stack.title}</h2>
+    <section className={styles['cStack']}>
+      <CSlider>
+      {techStackData.map((stack,index) => (
+      <div className={styles['cStack__card']} key={index}> 
         <ul>
-          {stack.techs.map((tech) => (
-          <li>{tech}</li>
+        <h2>{stack.title}</h2>
+          {stack.techs.map((tech,index) => (
+          <li key={index}>{tech}</li>
           ))}
         </ul>
       </div>
       ))
       }
+      </CSlider>
     </section>
   )
 }

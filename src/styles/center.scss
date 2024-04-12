@@ -4,6 +4,19 @@
   justify-content: center;
 }
 
+@mixin displayCenterWrap() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin displayCenterDrCol() {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @mixin alignItemsCenter() {
   display: flex;
   align-items: center;

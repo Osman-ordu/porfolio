@@ -1,0 +1,12 @@
+@import "../../styles/center.scss";
+
+.cStack {
+
+    &__card {
+        @include displayCenterDrCol();
+        max-width: 100%;
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
