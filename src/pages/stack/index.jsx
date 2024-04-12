@@ -45,10 +45,10 @@ const Stack = () => {
     },
   ];
   return (
-    <section className={styles['cStack']}>
+    <section className={styles['c-stack']}>
       <CSlider>
       {techStackData.map((stack,index) => (
-      <div className={styles['cStack__card']} key={index}> 
+      <div className={styles['c-stack__card']} key={index}> 
         <ul>
         <h2>{stack.title}</h2>
           {stack.techs.map((tech,index) => (
