@@ -23,19 +23,19 @@ const menuData = [
     title: 'education',
     link: '/education',
   },
-  {
-    key: 'certificates',
-    icon: <LiaCertificateSolid />,
-    title: 'certificates',
-    link: '/certificates',
-  },
-  { key: 'blog', icon: <SiMedium />, title: 'Blog', link: '/blog' },
-  {
-    key: 'projects',
-    icon: <FaRegFolder />,
-    title: 'projects',
-    link: '/projects',
-  },
+  // {
+  //   key: 'certificates',
+  //   icon: <LiaCertificateSolid />,
+  //   title: 'certificates',
+  //   link: '/certificates',
+  // },
+  // { key: 'blog', icon: <SiMedium />, title: 'Blog', link: '/blog' },
+  // {
+  //   key: 'projects',
+  //   icon: <FaRegFolder />,
+  //   title: 'projects',
+  //   link: '/projects',
+  // },
   {
     key: 'stack',
     icon: <RiStackshareLine />,
