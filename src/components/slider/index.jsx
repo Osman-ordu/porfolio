@@ -11,7 +11,17 @@ const CSlider = ({children}) => {
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows:false,
-        dots:true
+        dots:true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true
+            }
+          },
+        ]
       };
   return (
     <Slider {...settings}>
