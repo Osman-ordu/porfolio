@@ -34,6 +34,12 @@
   justify-content: space-evenly;
 }
 
+@mixin alignItemsStartSE() {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
 @mixin alignItemsCenterEnd() {
   display: flex;
   align-items: center;
