@@ -7,11 +7,10 @@ const CSlider = ({children}) => {
         autoplay: true,
         autoplaySpeed: 1500,
         infinite: true,
-        speed: 200,
+        speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         arrows:false,
-        dots:true,
         responsive: [
           {
             breakpoint: 1024,

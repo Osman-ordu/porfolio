@@ -2,7 +2,6 @@
 @import "../../styles/box-shadow.scss";
 
 .c-stack {
-
     &__card {
         @include displayCenterDrCol();
         @include boxShadowAll();
@@ -11,9 +10,9 @@
         border-radius: 10px;
         min-height: 70vh;
         cursor: grab;
-        background-color: #001628;
         color:#fff;
-
+        background-color: #001628;
+        opacity: 0.9;
     }
 }
 
