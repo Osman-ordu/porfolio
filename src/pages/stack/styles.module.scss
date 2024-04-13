@@ -1,13 +1,19 @@
 @import "../../styles/center.scss";
+@import "../../styles/box-shadow.scss";
 
 .c-stack {
 
     &__card {
         @include displayCenterDrCol();
+        @include boxShadowAll();
         max-width: 95%;
         border: 1px solid #000;
         border-radius: 10px;
-        height: 45vh;
+        min-height: 70vh;
+        cursor: grab;
+        background-color: #001628;
+        color:#fff;
+
     }
 }
 

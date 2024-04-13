@@ -5,12 +5,13 @@ import 'slick-carousel/slick/slick-theme.css';
 const CSlider = ({children}) => {
     const settings = {
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1500,
         infinite: true,
-        speed: 300,
+        speed: 200,
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows:false
+        arrows:false,
+        dots:true
       };
   return (
     <Slider {...settings}>

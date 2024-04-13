@@ -6,3 +6,7 @@ body {
   max-width: 1540px;
   background-color: #001628;
 }
+.slick-dots li button:before{
+  font-size: 14px;
+  margin-top: 5px;
+}
