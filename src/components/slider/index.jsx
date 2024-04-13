@@ -11,6 +11,7 @@ const CSlider = ({children}) => {
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows:false,
+        dots:true,
         responsive: [
           {
             breakpoint: 1024,
