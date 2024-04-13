@@ -12,9 +12,12 @@ const { Header, Content, Footer, Sider } = Layout;
 const MainLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [pageTitle, setPageTitle] = useState('');
+  const [pageIcon, setPageIcon] = useState(null);
 
-  const handleMenuClick = (title) => {
-    setPageTitle(title);
+
+  const handleMenuClick = ({ key, icon }) => {
+    setPageTitle(key);
+    setPageIcon(icon);
   };
 
   return (
@@ -31,7 +34,7 @@ const MainLayout = () => {
           <LanguageSelect />
         </Header>
         <Content className={style['c-main__content__area']}>
-          <PageTitle title={pageTitle} />
+        <PageTitle title={pageTitle} icon={pageIcon} />
           <div className={style['c-main__content']}>
             <Outlet />
           </div>

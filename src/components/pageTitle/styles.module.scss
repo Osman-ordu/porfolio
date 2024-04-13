@@ -1,10 +1,11 @@
 @import "../../styles/center";
 
 .c-pagetitle {
+  @include alignItemsCenterEnd();
+  gap: 10px;
   font-size: 20px;
   font-weight: 700;
   margin: 0px 5px 10px;
   font-family: "Kode Mono";
   text-transform: capitalize;
-  @include textAlignEnd();
 }

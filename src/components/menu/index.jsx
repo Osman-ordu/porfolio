@@ -47,8 +47,8 @@ const menuData = [
 const MenuGroup = ({ onMenuClick }) => {
   const { t } = useTranslation();
 
-  const handleMenuClick = ({ key }) => {
-    onMenuClick(key);
+  const handleMenuClick = ({ key,icon }) => {
+    onMenuClick({ key, icon });
   };
 
   return (
