@@ -1,48 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu } from 'antd';
-import { SiAboutdotme, SiMedium } from 'react-icons/si';
-import { MdOutlineWorkOutline } from 'react-icons/md';
-import { GoBook } from 'react-icons/go';
-import { LiaCertificateSolid } from 'react-icons/lia';
-import { FaRegFolder } from 'react-icons/fa';
-import { RiStackshareLine } from 'react-icons/ri';
+import { menuData } from '../../mocks';
 import style from './styles.module.scss';
-
-const menuData = [
-  { key: 'about', icon: <SiAboutdotme />, title: 'about', link: '/about' },
-  {
-    key: 'experience',
-    icon: <MdOutlineWorkOutline />,
-    title: 'experience',
-    link: '/experience',
-  },
-  {
-    key: 'education',
-    icon: <GoBook />,
-    title: 'education',
-    link: '/education',
-  },
-  // {
-  //   key: 'certificates',
-  //   icon: <LiaCertificateSolid />,
-  //   title: 'certificates',
-  //   link: '/certificates',
-  // },
-  // { key: 'blog', icon: <SiMedium />, title: 'Blog', link: '/blog' },
-  // {
-  //   key: 'projects',
-  //   icon: <FaRegFolder />,
-  //   title: 'projects',
-  //   link: '/projects',
-  // },
-  {
-    key: 'stack',
-    icon: <RiStackshareLine />,
-    title: 'stack',
-    link: '/stack',
-  },
-];
 
 const MenuGroup = ({ onMenuClick }) => {
   const { t } = useTranslation();

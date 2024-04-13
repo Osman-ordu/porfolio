@@ -1,24 +1,7 @@
 import { useTranslation } from 'react-i18next';
+import { educations } from '../../mocks';
 import TextBox from '../../components/textBox';
 import style from './styles.module.scss';
-
-const educations = [
-  {
-    titleKey: 'university_2_title',
-    sectionKey: 'university_2_section',
-    historyKey: 'university_2_history',
-  },
-  {
-    titleKey: 'university_1_title',
-    sectionKey: 'university_section_1',
-    historyKey: 'university_history_1',
-  },
-  {
-    titleKey: 'university_3_title',
-    sectionKey: 'university_3_section',
-    historyKey: 'university_3_history',
-  },
-];
 
 const Education = () => {
   const { t } = useTranslation();

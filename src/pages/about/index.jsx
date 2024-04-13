@@ -1,15 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import aboutImage from '../../assets/osmanordu.png';
+import { about } from '../../mocks';
 import ImageTextBox from '../../components/imageTextBox';
-
-const about = [
-  {
-    titleKey: 'title',
-    subTitleKey: 'name',
-    image: aboutImage,
-    paragraphs: ['description_p1', 'description_p2'],
-  },
-];
 
 const About = () => {
   const { t } = useTranslation();
