@@ -23,6 +23,10 @@
     }
     &__side {
         padding: 10px;
+        flex: 0 0 200px !important;
+        max-width: 200px !important;
+        min-width: 200px !important;
+        width: 200px !important;
     }
 
     &__container {
@@ -58,5 +62,24 @@
         color: #e5e5e5;
         font-family: "Kode Mono", monospace !important;
         @include textAlignEnd();
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .c-main {
+        &__side {
+            width: 0px !important;
+            min-width: 0px !important;
+            max-width: 0px !important;
+        }
+        &__hamburger{
+            width: 30px;
+            height: 30px;
+            color: #e5e5e5;
+            cursor: pointer;
+            position: absolute;
+            top: 3%;
+            left: 150%;
+        }
     }
 }
