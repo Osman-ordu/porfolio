@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Layout } from "antd";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { LogoArea } from "../../logoArea";
 import Menu from "../../menu";
 import PageTitle from "../../../components/pageTitle";
+import CopyRight from "../../../components/copyRight";
 import UseIsMobile from "../../isMobile";
 import LanguageSelect from "../../languageSwitch";
-import logo from "../../../assets/osmanordu-favicon-white.png";
 import style from "./styles.module.scss";
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -32,12 +33,7 @@ const MainLayout = () => {
   return (
     <Layout className={style["c-main"]}>
       <Sider className={style["c-main__side"]}>
-        {!isMobile && (
-          <div className={style["c-main__logo-area"]}>
-            <img src={logo} alt={"logo"} width={64} />
-            <span>Osman Ordu</span>
-          </div>
-        )}
+        {!isMobile && <LogoArea />}
         {isMobile && <RxHamburgerMenu onClick={handleOpenMobileNav} className={style["c-main__hamburger"]} />}
         <Menu onMenuClick={handleMenuClick} />
       </Sider>
@@ -51,7 +47,10 @@ const MainLayout = () => {
             <Outlet />
           </div>
         </Content>
-        <Footer className={style["c-main__footer"]}>Copyright © {new Date().getFullYear()} Osman ORDU</Footer>
+        <Footer className={style["c-main__footer"]}>
+          {isMobile && <LogoArea width={24} />}
+          <CopyRight />
+        </Footer>
       </Layout>
     </Layout>
   );

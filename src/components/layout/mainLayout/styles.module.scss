@@ -7,20 +7,6 @@
         background: #001628;
         padding: 40px;
     }
-    &__logo-area {
-        @include alignItemsCenter();
-        gap: 10px;
-        padding: 5px 10px;
-        color: #fff;
-        font-weight: 600x;
-        font-size: 1.1rem;
-        white-space: nowrape;
-        font-family: "Kode Mono", monospace !important;
-
-        img {
-            scale: 2;
-        }
-    }
     &__side {
         padding: 10px;
         flex: 0 0 200px !important;
@@ -81,6 +67,12 @@
             position: absolute;
             top: 3%;
             left: 150%;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: start;
         }
     }
 }

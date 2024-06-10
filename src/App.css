@@ -19,4 +19,7 @@ body {
     top: 10% !important;
     gap: 0px !important;
   }
+  .ant-layout-footer {
+    padding: 24px 30px 24px 10px !important;
+  }
 }
