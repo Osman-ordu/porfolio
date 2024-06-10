@@ -31,29 +31,53 @@ const MainLayout = () => {
   };
 
   return (
-    <Layout className={style["c-main"]}>
-      <Sider className={style["c-main__side"]}>
-        {!isMobile && <LogoArea />}
-        {isMobile && <RxHamburgerMenu onClick={handleOpenMobileNav} className={style["c-main__hamburger"]} />}
-        <Menu onMenuClick={handleMenuClick} />
-      </Sider>
-      <Layout className={style["c-main__container"]}>
-        <Header className={style["c-main__header"]}>
-          {isMobile && <PageTitle title={pageTitle} icon={pageIcon} />}
-          <LanguageSelect />
-        </Header>
-        <Content className={style["c-main__content__area"]}>
-          {!isMobile && <PageTitle title={pageTitle} icon={pageIcon} />}
-          <div className={style["c-main__content"]}>
-            <Outlet />
-          </div>
-        </Content>
-        <Footer className={style["c-main__footer"]}>
-          {isMobile && <LogoArea width={24} />}
-          <CopyRight />
-        </Footer>
-      </Layout>
-    </Layout>
+    <>
+      {isMobile && (
+        <Layout className={style["c-main"]}>
+          <Sider className={style["c-main__side"]}>
+            <RxHamburgerMenu onClick={handleOpenMobileNav} className={style["c-main__hamburger"]} />
+            <Menu onMenuClick={handleMenuClick} />
+          </Sider>
+          <Layout className={style["c-main__container"]}>
+            <Header className={style["c-main__header"]}>
+              <PageTitle title={pageTitle} icon={pageIcon} />
+              <LanguageSelect />
+            </Header>
+            <Content className={style["c-main__content__area"]}>
+              <div className={style["c-main__content"]}>
+                <Outlet />
+              </div>
+            </Content>
+            <Footer className={style["c-main__footer"]}>
+              <LogoArea width={24} />
+              <CopyRight />
+            </Footer>
+          </Layout>
+        </Layout>
+      )}
+      {!isMobile && (
+        <Layout className={style["c-main"]}>
+          <Sider className={style["c-main__side"]}>
+            <LogoArea />
+            <Menu onMenuClick={handleMenuClick} />
+          </Sider>
+          <Layout className={style["c-main__container"]}>
+            <Header className={style["c-main__header"]}>
+              <LanguageSelect />
+            </Header>
+            <Content className={style["c-main__content__area"]}>
+              <PageTitle title={pageTitle} icon={pageIcon} />
+              <div className={style["c-main__content"]}>
+                <Outlet />
+              </div>
+            </Content>
+            <Footer className={style["c-main__footer"]}>
+              <CopyRight />
+            </Footer>
+          </Layout>
+        </Layout>
+      )}
+    </>
   );
 };
 
