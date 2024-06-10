@@ -39,10 +39,11 @@ const MainLayout = () => {
       </Sider>
       <Layout className={style["c-main__container"]}>
         <Header className={style["c-main__header"]}>
+          {isMobile && <PageTitle title={pageTitle} icon={pageIcon} />}
           <LanguageSelect />
         </Header>
         <Content className={style["c-main__content__area"]}>
-          <PageTitle title={pageTitle} icon={pageIcon} />
+          {!isMobile && <PageTitle title={pageTitle} icon={pageIcon} />}
           <div className={style["c-main__content"]}>
             <Outlet />
           </div>

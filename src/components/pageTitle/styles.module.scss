@@ -12,3 +12,12 @@
     fill: chocolate;
   }
 }
+
+@media only screen and (max-width: 768px){
+  .c-pagetitle {
+  @include justifyStart();
+  color: #fff;
+  font-size: 14px;
+  margin: 0 auto !important;
+  }
+}

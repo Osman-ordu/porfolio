@@ -68,6 +68,9 @@
             top: 3%;
             left: 150%;
         }
+        &__header {
+            justify-content: space-between;
+        }
         &__footer {
             display: flex;
             justify-content: space-between;
