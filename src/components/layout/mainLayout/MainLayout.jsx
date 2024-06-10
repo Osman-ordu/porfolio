@@ -1,9 +1,10 @@
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import { Layout } from "antd";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LogoArea } from "../../logoArea";
 import Menu from "../../menu";
+import splittingPathname from "./../../../utils/helpers/pathName";
 import PageTitle from "../../../components/pageTitle";
 import CopyRight from "../../../components/copyRight";
 import UseIsMobile from "../../isMobile";
@@ -13,13 +14,12 @@ import style from "./styles.module.scss";
 const { Header, Content, Footer, Sider } = Layout;
 
 const MainLayout = () => {
+  const location = useLocation();
   const [pageTitle, setPageTitle] = useState("");
-  const [pageIcon, setPageIcon] = useState(null);
   const isMobile = UseIsMobile();
 
-  const handleMenuClick = ({ key, icon }) => {
+  const handleMenuClick = ({ key }) => {
     setPageTitle(key);
-    setPageIcon(icon);
   };
   const handleOpenMobileNav = () => {
     const mobileNav = document.querySelector("#root > div > aside > div > ul");
@@ -29,6 +29,11 @@ const MainLayout = () => {
       mobileNav.style.display = "none";
     }
   };
+
+  useEffect(() => {
+    const pathSegment = splittingPathname(location?.pathname);
+    setPageTitle(pathSegment);
+  }, [location]);
 
   return (
     <>
@@ -40,7 +45,7 @@ const MainLayout = () => {
           </Sider>
           <Layout className={style["c-main__container"]}>
             <Header className={style["c-main__header"]}>
-              <PageTitle title={pageTitle} icon={pageIcon} />
+              <PageTitle title={pageTitle} />
               <LanguageSelect />
             </Header>
             <Content className={style["c-main__content__area"]}>
@@ -66,7 +71,7 @@ const MainLayout = () => {
               <LanguageSelect />
             </Header>
             <Content className={style["c-main__content__area"]}>
-              <PageTitle title={pageTitle} icon={pageIcon} />
+              <PageTitle title={pageTitle} />
               <div className={style["c-main__content"]}>
                 <Outlet />
               </div>
