@@ -12,11 +12,9 @@ import style from "./styles.module.scss";
 const { Header, Content, Footer, Sider } = Layout;
 
 const MainLayout = () => {
-  const [collapsed, setCollapsed] = useState(false);
   const [pageTitle, setPageTitle] = useState("");
   const [pageIcon, setPageIcon] = useState(null);
   const isMobile = UseIsMobile();
-  console.log(isMobile);
 
   const handleMenuClick = ({ key, icon }) => {
     setPageTitle(key);
@@ -33,7 +31,7 @@ const MainLayout = () => {
 
   return (
     <Layout className={style["c-main"]}>
-      <Sider className={style["c-main__side"]} trigger={null} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+      <Sider className={style["c-main__side"]}>
         {!isMobile && (
           <div className={style["c-main__logo-area"]}>
             <img src={logo} alt={"logo"} width={64} />
