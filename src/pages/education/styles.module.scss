@@ -1,15 +1,16 @@
 @import "../../styles/center.scss";
 
-.container {
+.c-educationContainer{
     @include alignItemsStartSE();
     max-width: 100%;
     height: 60vh;
 }
 
 @media only screen and (max-width: 1024px) {
-    .container {
+    .c-educationContainer {
         height: auto;
         flex-direction: column;
         gap: 20px;
-    }
+        padding: 15px;
+      }
 }

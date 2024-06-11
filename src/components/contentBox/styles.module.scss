@@ -24,4 +24,31 @@
         color: chocolate;
         font-weight: 600;
     }
+    ul{
+        li::marker{
+            color: chocolate;
+        }
+    }
+}
+@media only screen and (max-width: 991px){
+    .c-contentbox{
+        ul{
+            padding: 0px 10px;
+
+            li{
+                margin: 5px;
+            }
+        }
+        h2{
+            margin: 0px ;
+        }
+        h3{
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        span{
+            font-size: 10px;
+            white-space: nowrap;
+        }
+    }
 }

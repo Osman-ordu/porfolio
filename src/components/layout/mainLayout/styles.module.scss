@@ -32,7 +32,7 @@
     }
     &__content__area::-webkit-scrollbar-thumb {
         background-color: #e5e5e5;
-        border: 4px solid #001628;
+        border: 2px solid #001628;
         opacity: 0.8;
         border-radius: 5px;
     }
@@ -76,6 +76,16 @@
             justify-content: space-between;
             align-items: center;
             text-align: start;
+        }
+        &__content {
+            padding: 0px;
+            line-height: 1.5;
+        }
+        &__content__area{
+            margin: 0px;
+        }
+        &__content__area::-webkit-scrollbar {
+            width: 8px;
         }
     }
 }

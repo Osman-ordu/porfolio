@@ -1,12 +1,13 @@
-import { useTranslation } from 'react-i18next';
-import { experiences } from '../../mocks';
-import ContentBox from '../../components/contentBox';
+import { useTranslation } from "react-i18next";
+import { experiences } from "../../mocks";
+import ContentBox from "../../components/contentBox";
+import style from "./styles.module.scss";
 
 const Experience = () => {
   const { t } = useTranslation();
 
   return (
-    <section>
+    <section className={style["c-experienceContainer"]}>
       {experiences.map((experience, index) => (
         <ContentBox
           key={index}
