@@ -1,0 +1,23 @@
+.c-articles{
+max-width: 100%;
+    &__article{
+        padding: 10px;
+        margin: 40px;
+        background-color: #fff;
+        text-align: center;
+        &:first-child {
+            margin-top: 0px !important;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+    figure{
+        img{
+            max-width: 100%;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+}

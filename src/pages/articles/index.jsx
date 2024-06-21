@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { fetchMediumArticles } from "../services/mediumService";
+import { fetchMediumArticles } from "../../services/mediumService";
+import styles from "./styles.module.scss";
 
 const MediumArticles = () => {
   const [articles, setArticles] = useState([]);
@@ -14,20 +15,18 @@ const MediumArticles = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Medium Articles</h1>
-      <ul>
-        {articles.map((article, index) => (
-          <li key={index}>
-            <a href={article.link} target="_blank" rel="noopener noreferrer">
-              <h2>{article.title}</h2>
-            </a>
-            <p>{article.description}</p>
-            <p>{article.pubDate}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <section className={styles["c-articles"]}>
+      {articles.map((article, index) => (
+        <div className={styles["c-articles__article"]} key={index}>
+          <a href={article.link} target="_blank" rel="noopener noreferrer">
+            <h2>{article.title}</h2>
+          </a>
+          <p>{article.description}</p>
+          <p>{article.pubDate}</p>
+          <div dangerouslySetInnerHTML={{ __html: article.content }} />
+        </div>
+      ))}
+    </section>
   );
 };
 

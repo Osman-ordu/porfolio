@@ -13,13 +13,15 @@ export const fetchMediumArticles = async () => {
         const linkElement = item.querySelector('link');
         const descriptionElement = item.querySelector('description');
         const pubDateElement = item.querySelector('pubDate');
-        
+        const contentElement = item.getElementsByTagNameNS('*', 'encoded').item(0);
+
         const title = titleElement ? titleElement.textContent : 'No title';
         const link = linkElement ? linkElement.textContent : '#';
-        const description = descriptionElement ? descriptionElement.textContent : 'No description';
+        const description = descriptionElement ? descriptionElement.textContent : '';
         const pubDate = pubDateElement ? pubDateElement.textContent : 'No date';
+        const content = contentElement ? contentElement.innerHTML : '';
         
-        articles.push({ title, link, description, pubDate });
+        articles.push({ title, link, description, pubDate, content });
     });
     
     return articles;

@@ -5,7 +5,7 @@ const infosEn = {
     experience:'Experience',
     education:'Education',
     certificates:'Certificates',
-    blog:'Blog',
+    blog:'Articles',
     projects:'Projects',
     stack:'Stack',
 

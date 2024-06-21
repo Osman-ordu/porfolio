@@ -5,7 +5,7 @@ const infosTr = {
     experience:'Deneyim',
     education:'Eğitim',
     certificates:'Sertifikalar',
-    blog:'Blog',
+    blog:'Makaleler',
     projects:'Projeler',
     stack:'Yığın',
 
