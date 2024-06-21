@@ -66,6 +66,7 @@ const infosEn = {
 
     // UI
     send_button:'SEND!',
+    viewCV:"View CV",
 }
 
 export default  infosEn;

@@ -68,6 +68,7 @@ const infosTr = {
 
     // UI
     send_button:'GÖNDER!',
+    viewCV:"Özgeçmişi incele",
 }
 
 export default infosTr;

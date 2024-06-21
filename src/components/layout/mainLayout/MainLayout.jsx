@@ -7,6 +7,7 @@ import Menu from "../../menu";
 import splittingPathname from "./../../../utils/helpers/pathName";
 import PageTitle from "../../../components/pageTitle";
 import CopyRight from "../../../components/copyRight";
+import ViewCV from "../../../components/viewCV";
 import UseIsMobile from "../../isMobile";
 import LanguageSelect from "../../languageSwitch";
 import style from "./styles.module.scss";
@@ -46,6 +47,7 @@ const MainLayout = () => {
           <Layout className={style["c-main__container"]}>
             <Header className={style["c-main__header"]}>
               <PageTitle title={pageTitle} />
+              <ViewCV />
               <LanguageSelect />
             </Header>
             <Content className={style["c-main__content__area"]}>
@@ -68,6 +70,7 @@ const MainLayout = () => {
           </Sider>
           <Layout className={style["c-main__container"]}>
             <Header className={style["c-main__header"]}>
+              <ViewCV />
               <LanguageSelect />
             </Header>
             <Content className={style["c-main__content__area"]}>

@@ -1,0 +1,17 @@
+.c-viewCv{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    span{
+        color: #fff !important;
+        font-weight: 600;
+    }
+    span:hover{
+        font-size: 15px;
+        transition: all ease 0.2s;
+        text-decoration:underline;
+        
+    }
+}
