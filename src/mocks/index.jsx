@@ -56,7 +56,7 @@ export const experiences = [
     titleKey: "experience_1_title",
     subTitleKey: "title",
     history: "experience_1_title_sub",
-    paragraphs: ["experience_1_description_1", "experience_1_description_2"],
+    paragraphs: ["experience_1_description_1", "experience_1_description_2", "experience_1_description_3", "experience_1_description_4", "experience_1_description_5"],
   },
   {
     id: "segmentify",

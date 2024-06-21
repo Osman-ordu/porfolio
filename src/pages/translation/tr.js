@@ -18,8 +18,11 @@ const infosTr = {
     // Experience
     experience_1_title:'PrimeTech',
     experience_1_title_sub:' - 02/2024 - Halen',
-    experience_1_description_1:'Kullanıcı ve kontrol paneli bölümlerini içeren, çekirdek yönetici paneli görevi gören bir React uygulamasının geliştirilmesine katkıda bulunuldu. Kullanıcı yönetimi modülü içerisinde CRUD işlemlerinin uygulanmasına odaklanılmıştır.',
-    experience_1_description_2:'PrimeTech, e-posta işlevselliği, çoklu dil desteği ve SEO optimizasyonu gibi temel özellikleri entegre ederek resmi web sitesini sıfırdan geliştirdi.',
+    experience_1_description_1:'Hızlı kripto para birimi veri akışı için React, TSX ve Socket.IO kullanılarak geliştirilmiş yatırımcı kontrol panelleri ve bot yönetimi geliştirildi.',
+    experience_1_description_2:'Projelerde WebSocket ve Socket.IO ile düzenlenmiş gerçek zamanlı bağlantı kurulumu geliştirildi.',
+    experience_1_description_3:'İki ay içinde gelişmiş bir Emir Defteri Yönetim Sistemi (OBMS) geliştirildi ',
+    experience_1_description_4:'"Risk Management System" projesinde hata düzeltmelerine ve "Report Mode" özelliklerine katkıda bulunularak QA ekipleriyle yakın işbirliği yapıldı.',
+    experience_1_description_5:'Kullanıcı odaklı tasarımlar sağlayan React, Redux Toolkit, Datagrid, Ant Design ve Sass ile hazırlanmış sezgisel arayüzler geliştirdi.',
     
 
     experience_2_title:'Segmentify',

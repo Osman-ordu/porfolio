@@ -18,9 +18,11 @@ const infosEn = {
     // Experience
     experience_1_title:'PrimeTech',
     experience_1_title_sub:' - 02/2024 - Present',
-    experience_1_description_1:'Contributed to the development of a React application that served as the core admin panel, containing user and control panel sections. Focused on the implementation of CRUD operations within the user management module.',
-    experience_1_description_2:'PrimeTech developed the official website from scratch by integrating key features such as email functionality, multi-language support and SEO optimization.',
-    experience_1_description_3:'',
+    experience_1_description_1:'Developed investor dashboards and bot management using React, TSX and Socket.IO for fast cryptocurrency data flow.',
+    experience_1_description_2:'Developed real-time connection setup with WebSocket and Socket.IO in projects.',
+    experience_1_description_3:'Developed an advanced Order Book Management System (OBMS) in two months.',
+    experience_1_description_4:'Collaborated closely with QA teams in the "Risk Management System" project by contributing to bug fixes and "Report Mode" features.',
+    experience_1_description_5:'Developed intuitive interfaces prepared with React, Redux Toolkit, Datagrid, Ant Design and Sass, providing user-oriented designs.',
 
     experience_2_title:'Segmentify',
     experience_2_title_sub:' - 11/2022 - 02/2024',
