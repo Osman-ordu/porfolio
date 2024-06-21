@@ -1,5 +1,7 @@
 export const fetchMediumArticles = async () => {
-    const rssUrl = 'https://medium.com/feed/@orduosmann';
+    // const rssUrl = 'https://medium.com/feed/@orduosmann';
+    const rssUrl = 'https://cors-anywhere.herokuapp.com/https://medium.com/feed/@orduosmann';
+
     const response = await fetch(rssUrl);
     const rssText = await response.text();
     const parser = new DOMParser();
