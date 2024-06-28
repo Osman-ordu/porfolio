@@ -27,7 +27,6 @@ export const fetchMediumArticles = async () => {
             
             articles.push({ title, link, description, pubDate, content });
         });
-        
         return articles;
     } catch (error) {
         console.error('Error fetching or parsing Medium articles:', error);
