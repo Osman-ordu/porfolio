@@ -10,13 +10,13 @@ import Articles from "../pages/articles";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="" element={<MainLayout />}>
-        <Route path="/" index element={<About />} />
-        <Route path="/about" index element={<About />} />
-        <Route path="/experience" index element={<Experience />} />
-        <Route path="/education" index element={<Education />} />
-        <Route path="/stack" index element={<Stack />} />
-        <Route path="/articles" index element={<Articles />} />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<About />} />
+        <Route path="about" element={<About />} />
+        <Route path="experience" element={<Experience />} />
+        <Route path="education" element={<Education />} />
+        <Route path="stack" element={<Stack />} />
+        <Route path="articles" element={<Articles />} />
       </Route>
     </Routes>
   );
