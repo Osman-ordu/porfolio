@@ -72,94 +72,38 @@ export const experiences = [
     history: "experience_3_title_sub",
     paragraphs: ["experience_3_description_1", "experience_3_description_2", "experience_3_description_3"],
   },
-  {
-    id: "inditex",
-    titleKey: "experience_4_title",
-    subTitleKey: "Visual Merchandiser",
-    history: "experience_4_title_sub",
-    paragraphs: ["experience_4_description_1", "experience_4_description_2", "experience_4_description_3"],
-  },
 ];
 
 export const stacks = [
   {
     id: "programming-languages",
     title: "Programming Languages",
-    techs: [
-      "JavaScript (Core for frontend functionality)",
-      "TypeScript (Superset of JS for stronger typing and maintainability)",
-      "Node.js (JavaScript runtime environment for server-side scripting)",
-    ],
+    techs: ["JavaScript", "TypeScript", "Node.js"],
   },
   {
-    id: "libraries",
-    title: "Libraries",
-    techs: [
-      "jQuery (Popular library for DOM manipulation and event handling)",
-      "Mustache (Templating library for generating HTML from data)",
-      "DevExtreme (Comprehensive UI component library)",
-      "Ant Design (React UI component library with a rich set of components)",
-      "Redux (State management library for predictable state updates)",
-      "I18n (Internationalization libraries for language support)",
-      "Formik (Form handling library for validation and form management)",
-      "Yup (Schema validation library for data integrity)",
-      "Socket.io (Real-time communication library for bidirectional data flow)",
-    ],
-  },
-  {
-    id: "frameworks",
-    title: "Frameworks",
-    techs: ["React (Popular JS library for building reusable UI components)", "Angular (Comprehensive framework for building large-scale web applications)"],
+    id: "framework-libraries",
+    title: "Framework and Libraries",
+    techs: ["React.js", "jQuery", "Mustache", "DevExtreme", "Ant Design", "Redux", "I18n", "Formik", "Yup", "Socket.io"],
   },
   {
     id: "styles",
     title: "Styles",
-    techs: [
-      "Pure CSS (Methodology for writing maintainable CSS)",
-      "Bootstrap (Prebuilt CSS framework for responsive layouts)",
-      "Sass & SCSS (CSS preprocessors for better organization and features)",
-      "Less (Another CSS preprocessor with similar functionalities)",
-      "Tailwind CSS (Utility-first CSS framework for rapid styling)",
-    ],
+    techs: ["Cascading Style Sheets ", "Bootstrap", "Sass and SCSS", "Less ", "Tailwind CSS"],
   },
   {
-    id: "ides",
-    title: "IDEs (Integrated Development Environments)",
-    techs: ["Visual Studio (Popular IDE for various programming languages)", "Visual Studio Code (Lightweight and customizable code editor)", "Eclipse (Open-source IDE for Java and other languages)"],
+    id: "ides-version-control-systems ",
+    title: "IDEs, Version Control Systems and Repositories",
+    techs: ["Visual Studio ", "Visual Studio Code ", "Eclipse ", "Git", "Github", "Bitbucket"],
   },
   {
-    id: "version-control-systems",
-    title: "Version Control Systems",
-    techs: ["Git (Most popular version control system for tracking code changes)"],
-  },
-  {
-    id: "version-control-repositories",
-    title: "Version Control Repositories",
-    techs: ["GitHub (Popular cloud-based Git hosting service)", "Bitbucket (Another Git hosting service with team collaboration features)"],
-  },
-  {
-    id: "debugging-tools",
-    title: "Debugging Tools",
-    techs: [
-      "Google Chrome DevTools (Built-in browser developer tools for inspecting and debugging)",
-      "VS Debugger (Debugging functionality within Visual Studio)",
-      "Eclipse Debugger (Debugging functionality within Eclipse)",
-    ],
-  },
-  {
-    id: "package-managers",
-    title: "Package Managers",
-    techs: ["NPM (Node Package Manager for installing JavaScript packages)", "Yarn (Alternative package manager with advanced features)"],
+    id: "package-managers-debugging",
+    title: "Package Managers and Debugging Tools",
+    techs: ["NPM ", "Yarn ", "Google Chrome DevTools", "VS Debugger", "Eclipse Debugger"],
   },
   {
     id: "analytics-tools",
-    title: "Analytics Tools",
-    techs: ["Google Analytics (Popular web analytics tool for tracking user behavior)"],
-  },
-  {
-    id: "operating-systems",
-    title: "Operating Systems",
-    techs: ["Windows, macOS (Popular choices for frontend development)"],
+    title: "Analytics Tools, Web Service and Operating Systems",
+    techs: ["Google Analytics", "Amazon Web Service", "CDN S3 Bucket", "Windows", "macOS"],
   },
 ];
 
