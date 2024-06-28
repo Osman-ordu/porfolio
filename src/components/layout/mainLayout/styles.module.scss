@@ -1,5 +1,5 @@
 @import "../../../styles/center.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .c-main {
     max-height: 100vh;
     &__header {
@@ -40,14 +40,14 @@
         padding: 15px;
         min-height: 75vh;
         border-radius: 10px;
-        font-family: "Kode Mono", monospace !important;
+        font-family: "Open Sans", sans-serif !important;
         line-height: 2.1;
         font-weight: 500;
     }
     &__footer {
         background-color: #001628;
         color: #e5e5e5;
-        font-family: "Kode Mono", monospace !important;
+        font-family: "Open Sans", sans-serif !important;
         @include textAlignEnd();
     }
 }

@@ -1,5 +1,5 @@
 @import "../../styles/center.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .c-logoarea {
     @include alignItemsCenter();
     gap: 10px;
@@ -8,7 +8,7 @@
     font-weight: 600x;
     font-size: 1.1rem;
     white-space: nowrape;
-    font-family: "Kode Mono", monospace !important;
+    font-family: "Open Sans", sans-serif;
 
     img {
         scale: 2;
