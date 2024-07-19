@@ -1,3 +1,19 @@
+# Stack
+
+    "antd"
+    "history"
+    "i18n"
+    "i18next"
+    "react"
+    "react-dom"
+    "react-i18next"
+    "react-lazy-load"
+    "react-lazy-load-image-component"
+    "react-router-dom"
+    "react-slick"
+    "sass"
+    "slick-carousel"
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
