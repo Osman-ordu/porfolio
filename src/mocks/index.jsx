@@ -1,7 +1,7 @@
 import { SiAboutdotme } from 'react-icons/si';
 import { MdOutlineWorkOutline } from 'react-icons/md';
 import { GoBook } from 'react-icons/go';
-import { GrContact } from 'react-icons/gr';
+// import { GrContact } from 'react-icons/gr';
 import { FaMedium } from 'react-icons/fa6';
 import aboutImage from '../assets/osmanordu.png';
 import segmentifyImage from '../assets/segmentify_logo.png';
@@ -29,12 +29,12 @@ export const menuData = [
     title: 'blog',
     link: 'https://medium.com/@orduosmann',
   },
-  {
-    key: 'contact',
-    icon: <GrContact />,
-    title: 'contacts',
-    link: '/contacts',
-  },
+  // {
+  //   key: 'contact',
+  //   icon: <GrContact />,
+  //   title: 'contacts',
+  //   link: '/contacts',
+  // },
 ];
 
 export const about = [
