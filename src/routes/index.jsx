@@ -1,11 +1,11 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import MainLayout from "../components/layout/mainLayout/MainLayout";
-import Experience from "../pages/experience";
-import Education from "../pages/education";
-import About from "../pages/about";
-import Stack from "../pages/stack";
-import Articles from "../pages/articles";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MainLayout from '../components/layout/mainLayout/MainLayout';
+import Experience from '../pages/experience';
+import Education from '../pages/education';
+import About from '../pages/about';
+import Stack from '../pages/stack';
+import Contact from '../pages/contact';
 
 const AppRoutes = () => {
   return (
@@ -16,7 +16,7 @@ const AppRoutes = () => {
         <Route path="experience" element={<Experience />} />
         <Route path="education" element={<Education />} />
         <Route path="stack" element={<Stack />} />
-        <Route path="articles" element={<Articles />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
   );

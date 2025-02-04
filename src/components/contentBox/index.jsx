@@ -1,18 +1,38 @@
+import UseIsMobile from '../isMobile';
 import style from './styles.module.scss';
 
-const ContentBox = ({ id, title, paragraphs, subTitle, history }) => {
+const ContentBox = ({ id, title, paragraphs, subTitle, history, image, state }) => {
+  const isMobile = UseIsMobile();
   return (
     <div id={id} className={style['c-contentbox']}>
-      <ul>
-        <h2>{subTitle}</h2>
-        <div className={style['c-contentbox__sub']}>
-          <h3>{title}</h3>
-          <span>{history}</span>
+      <div className={style['c-contentbox__main']}>
+        <div className={style['c-contentbox__head']}>
+          {!isMobile && (
+            <h2>
+              <img src={image} alt="/" />
+              {subTitle} | {title}
+            </h2>
+          )}
+          {isMobile && (
+            <>
+              <h2>
+                <img src={image} alt="/" />
+                {subTitle}
+              </h2>
+              <div>{title}</div>
+            </>
+          )}
+          <span>
+            {state}
+            {history}
+          </span>
         </div>
-        {paragraphs.map((paragraph, index) => (
-          <li key={index}>{paragraph}</li>
-        ))}
-      </ul>
+        <ul>
+          {paragraphs.map((paragraph, index) => (
+            <li key={index}>{paragraph}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
